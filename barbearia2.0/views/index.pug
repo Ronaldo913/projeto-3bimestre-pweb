@@ -1,5 +1,48 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html(lang='pt-br')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Barbearia Stylus
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    #container
+      header
+        #navbar
+          img(src="../IMG/image/dono.png")
+          a(href='index.html') Início
+          a(href='./HTML/sobre.html') Sobre
+          a(href='./HTML/localizacao.html') Localização
+          a(href='./HTML/contato.html') Contato
+      main
+        #principal
+          h1 Barbearia Stylus
+          p  A melhor barbearia de São Sebastião e região!
+        #navegacao
+          h2 Navegue pelo site
+          .item-foto
+            a(href='./HTML/joias.html')
+              img(src='./IMG/relogio-joalheria.jpg' width='250' height='250')
+            a(href='./HTML/joias.html') Joalheria
+          .item-foto
+            a(href='./HTML/roupas.html')
+              img(src='./IMG/roupas-roupas.jpg' width='250' height='250')
+            a(href='./HTML/roupas.html') Roupas
+          .item-foto
+            a(href='./HTML/cosmeticos.html')
+              img(src='./IMG/hidratante-cosmeticos.jpg' width='250' height='250')
+            a(href='./HTML/cosmeticos.html') Cosméticos
+        #cortes
+          #texto-cortes
+            h1 Conheça alguns de nossos cortes
+            h2 Cliente sempre satisfeito
+          #cortes-lista
+            #img-cortes
+              img.image(src='../IMG/corte01.jpg')
+              img.image(src='../IMG/corte02.jpeg')
+            #img-cortes
+              img.image(src='../IMG/corte03.jpeg')
+              img.image(src='../IMG/corte04.jpeg')
+      footer
+        | São Sebastião - 2022
